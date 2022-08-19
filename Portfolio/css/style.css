@@ -9,20 +9,18 @@
     /* box-sizing establece como se calcula el ancho y alto total de un elemento y border-box 
     le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno
     para el ancho o alto de un elemento*/
-    /*background-color: black;*/
 }
 
-.main{
+.barra{
     height: 100vh;
     width: 100%;
     background-color: black;
     background-image: url("IMG_20211214_221653_120-01.jpeg");
-    background-size: 40%;
-    background-position-x: 90%;
-    background-position-y: 80%;
-    background-repeat: no-repeat;
-    
+    background-size:contain;
+    background-position: 150px 55px;
+    background-repeat: no-repeat; 
 }
+
 
 nav{
     display: flex; /* elemento flexible para alterar sus dimensiones y llenar el espacio disponible */
@@ -68,6 +66,25 @@ nav ul li a:hover{ /* cuando se interactúa con un elemento, pero no necesariame
     transition: .4s;
 }
 
+.btn{
+    background-color: #f9004d;;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    margin:-10px -120px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+    position:absolute;
+}
+
+.btn:hover{
+    color: black;
+    transition: .4s;
+    transform:scale(1.2);
+}
+
 .content{
     position: absolute; /* permite posicionar elementos de manera absoluta */
     top: 50%;
@@ -97,6 +114,95 @@ h3{
 h4{
     color: #f9004d;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 25px;
+    margin-bottom: -10px;
 }
+
+.about{
+    width: 100%;
+    padding: 100px 8%;
+    background-color: black ;
+}
+
+.about-text{
+    width: 550px;
+}
+
+main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2{
+    color: #f9004d;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.servicios{
+    width: 100%;
+    padding: 100px 8%;
+    background-color: black ;
+}
+
+.titulo h2{
+    text-align: center;
+    color: #f9004d;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card{
+    height:365px;
+    width:335px;
+    padding:20px 35px;
+    background:#191919;
+    border-radius:20px;
+    margin:15px;
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+}
+
+.card i{
+    font-size: 50px;
+    display:block;
+    text-align: center;
+    margin: 25px 0px;
+    color:white;
+}
+
+h5{
+    color:#f9004d;
+    font-size:23px;
+    margin-bottom:15px;
+}
+
+.contenido p{
+    color:rgb(255, 255, 255) ;
+    font-size:16px;
+    line-height:27px;
+    margin-bottom:25px;
+}
+
+
 
