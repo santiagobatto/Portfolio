@@ -1,134 +1,147 @@
-*{
+* {
     /* El margin hace que nuestro contenedor esté separado de otros, y podemos ver que el padding 
     hace que el contenido esté separado del borde */
 
     padding: 0;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
-    box-sizing: border-box ; 
+    box-sizing: border-box;
     /* box-sizing establece como se calcula el ancho y alto total de un elemento y border-box 
     le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno
     para el ancho o alto de un elemento*/
 }
 
-.barra{
+.barra {
     height: 100vh;
     width: 100%;
     background-color: black;
     background-image: url("IMG_20211214_221653_120-01.jpeg");
-    background-size:contain;
+    background-size: contain;
     background-position: 150px 55px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
 
-nav{
-    display: flex; /* elemento flexible para alterar sus dimensiones y llenar el espacio disponible */
+nav {
+    display: flex;
+    /* elemento flexible para alterar sus dimensiones y llenar el espacio disponible */
     align-items: center;
-    justify-content: space-between; /* como distribuir el espacio entre y alrededor de los items flex
+    justify-content: space-between;
+    /* como distribuir el espacio entre y alrededor de los items flex
     y space-between para los elementos aparezcan distribuidos uniformemente */
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
 }
 
-.logo{
+.logo {
     color: white;
     font-size: 35px;
     letter-spacing: 1px;
-    cursor: pointer; /* permite seleccionar un puntero */
+    cursor: pointer;
+    /* permite seleccionar un puntero */
 }
 
-span{ /* asignar un estilo a un elemento pequeño dentro de una etiqueta de bloque */
+span {
+    /* asignar un estilo a un elemento pequeño dentro de una etiqueta de bloque */
     color: #f9004d;
 }
 
-.soy{
+.soy {
     color: white;
 }
 
 
-nav ul li{
-    list-style-type: none; /* tipo de marcador de ítems de lista */
-    display: inline-block; /* crea cajas que son de bloque y en línea de forma simultánea */
+nav ul li {
+    list-style-type: none;
+    /* tipo de marcador de ítems de lista */
+    display: inline-block;
+    /* crea cajas que son de bloque y en línea de forma simultánea */
     padding: 10px 25px;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
-    text-decoration: none; /* establecer el formato de texto a subrayado */
-    font-weight: bold; /* grosor de 700 */
-    text-transform: capitalize; /* especifica el cambio entre mayúsculas y minúsculas del texto de un elemento */
+    text-decoration: none;
+    /* establecer el formato de texto a subrayado */
+    font-weight: bold;
+    /* grosor de 700 */
+    text-transform: capitalize;
+    /* especifica el cambio entre mayúsculas y minúsculas del texto de un elemento */
 }
 
-nav ul li a:hover{ /* cuando se interactúa con un elemento, pero no necesariamente lo activa */
+nav ul li a:hover {
+    /* cuando se interactúa con un elemento, pero no necesariamente lo activa */
     color: #f9004d;
     transition: .4s;
 }
 
-.btn{
-    background-color: #f9004d;;
+.btn {
+    background-color: #f9004d;
+    ;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    margin:-10px -120px;
+    margin: -10px -120px;
     padding: 10px 25px;
     border-radius: 30px;
     transition: transform .4s;
-    position:absolute;
+    position: absolute;
 }
 
-.btn:hover{
+.btn:hover {
     color: black;
     transition: .4s;
-    transform:scale(1.2);
+    transform: scale(1.2);
 }
 
-.content{
-    position: absolute; /* permite posicionar elementos de manera absoluta */
+.content {
+    position: absolute;
+    /* permite posicionar elementos de manera absoluta */
     top: 50%;
     left: 8%;
-    transform: translateY(-50%); /* te permite modificar el espacio de coordenadas y translate 
+    transform: translateY(-50%);
+    /* te permite modificar el espacio de coordenadas y translate 
     recoloca un elemento en el eje horizontal y/o vertical*/
 }
 
-h1{
+h1 {
     color: white;
     margin: 20px 0px 20px;
     font-size: 75px;
 }
 
-h1{
+h1 {
     color: white;
     margin: 20px 0px 20px;
     font-size: 75px;
 }
 
-h3{
+h3 {
     color: white;
     font-size: 25px;
     margin-bottom: 50px;
 }
 
-h4{
+h4 {
     color: #f9004d;
     letter-spacing: 2px;
     font-size: 25px;
     margin-bottom: -10px;
 }
 
-.about{
+.about {
     width: 100%;
     padding: 100px 8%;
-    background-color: black ;
+    background-color: black;
 }
 
-.about-text{
+.about-text {
     width: 550px;
 }
 
-main{
+main {
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;
@@ -137,13 +150,13 @@ main{
     justify-content: space-around;
 }
 
-.about-text h2{
+.about-text h2 {
     color: #f9004d;
     font-size: 35px;
     margin-bottom: 20px;
 }
 
-p{
+p {
     color: white;
     letter-spacing: 1px;
     line-height: 28px;
@@ -151,217 +164,232 @@ p{
     margin-bottom: 45px;
 }
 
-.servicios{
+.servicios {
     width: 100%;
     padding: 100px 8%;
-    background-color: black ;
+    background-color: black;
 }
 
-.titulo h2{
+.titulo h2 {
     text-align: center;
     color: #f9004d;
     font-size: 35px;
     margin-bottom: 20px;
 }
 
-.box{
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 400px;
 }
 
-.card{
-    height:365px;
-    width:335px;
-    padding:20px 35px;
-    background:#191919;
-    border-radius:20px;
-    margin:15px;
-    position:relative;
-    overflow:hidden;
-    text-align:center;
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
 }
 
-.card i{
+.card i {
     font-size: 50px;
-    display:block;
+    display: block;
     text-align: center;
     margin: 25px 0px;
-    color:white;
+    color: white;
 }
 
-h5{
-    color:#f9004d;
-    font-size:23px;
-    margin-bottom:15px;
+h5 {
+    color: #f9004d;
+    font-size: 23px;
+    margin-bottom: 15px;
 }
 
-.contenido p{
-    color:rgb(255, 255, 255) ;
-    font-size:16px;
-    line-height:27px;
-    margin-bottom:25px;
+.contenido p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
 }
 
-.skill{
-    width:100%;
+.skill {
+    width: 100%;
     padding: 100px 8%;
-    background-color: black ;
+    background-color: black;
 }
-.skill h2{
+
+.skill h2 {
     color: #f9004d;
     font-size: 35px;
     margin-bottom: 20px;
 }
 
-.skill li{
-    
+.skill li {
+
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
 }
 
-.bar{
-    background:#353b48;
-    display:block;
-    height:20px;
-    border:1px solid rgba(0,0,0,0.3);
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:01px 3px rgba(0,0,0,0.12),01px 2px rgba(0,0,0,0.24);
-    transition:all 0.3s cubic-bezier(.25,.8,.25,1);
+.bar {
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 01px 3px rgba(0, 0, 0, 0.12), 01px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-.bar span{
-    height:20px;
-    float:left;
-    background:linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
 }
 
-.java{
+.java {
 
-    width:60%;
-    animation:html 3s;
+    width: 60%;
+    animation: html 3s;
 }
 
-.c{
+.c {
 
-    width:75%;
-    animation:html 3s;
+    width: 75%;
+    animation: html 3s;
 }
 
-.ang{
+.ang {
 
-    width:40%;
-    animation:html 3s;
-}
-.html{
-    width:70%;
-    animation:css 3s;
+    width: 40%;
+    animation: html 3s;
 }
 
-.css{
-
-    width:80%;
-    animation:html 3s;
+.html {
+    width: 70%;
+    animation: css 3s;
 }
 
-.ing{
+.css {
 
-    width:95%;
-    animation:html 3s;
+    width: 80%;
+    animation: html 3s;
 }
 
-.scrum{
+.ing {
 
-    width:70%;
-    animation:html 3s;
+    width: 95%;
+    animation: html 3s;
 }
 
-@keyframes java{
-    0%{
-        width:0%;
-   }
-    60%{
-    
-        width:90%;  }    
+.scrum {
+
+    width: 70%;
+    animation: html 3s;
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
     }
 
-@keyframes c{
-    0%{
-        width:0%;
-   }
-    75%{
-    
-        width:90%;  }    
-    }
+    60% {
 
-@keyframes ang{
-    0%{
-        width:0%;
-   }
-    40%{
-    
-        width:90%;  }    
+        width: 90%;
     }
-
-@keyframes html{
-    0%{
-        width:0%;
-   }
-    70%{
-    
-        width:90%;  }    
-    }
-
-@keyframes css{
-    0%{
-        width:0%;
-   }
-    80%{
-    
-        width:90%;  }    
-    }
-
-@keyframes ing{
-    0%{
-        width:0%;
-   }
-    95%{
-        width:90%;
-    }    
 }
 
-@keyframes scrum{
-    0%{
-        width:0%;
-   }
-    70%{
-        width:90%;
-    }    
+@keyframes c {
+    0% {
+        width: 0%;
+    }
+
+    75% {
+
+        width: 90%;
+    }
 }
 
-.contacto{
-    width:100%;
-    height:300px;
-    background:#191919;
-    display:flex;
-    align-items:center;
-    flex-direction:column;
-    justify-content:center;
+@keyframes ang {
+    0% {
+        width: 0%;
+    }
+
+    40% {
+
+        width: 90%;
+    }
 }
 
-.contacto p{
-    color:white;
-    font-size:30px;
-    font-weight:bold;
-    margin-bottom:25px;
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    70% {
+
+        width: 90%;
+    }
 }
 
-.boton{
-    background-color: #f9004d;;
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    80% {
+
+        width: 90%;
+    }
+}
+
+@keyframes ing {
+    0% {
+        width: 0%;
+    }
+
+    95% {
+        width: 90%;
+    }
+}
+
+@keyframes scrum {
+    0% {
+        width: 0%;
+    }
+
+    70% {
+        width: 90%;
+    }
+}
+
+.contacto {
+    width: 100%;
+    height: 300px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacto p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.boton {
+    background-color: #f9004d;
+    ;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -371,31 +399,31 @@ h5{
     transition: transform .4s;
 }
 
-.boton:hover{
+.boton:hover {
     color: black;
     transition: .4s;
-    transform:scale(1.2);
+    transform: scale(1.2);
 }
 
-.social{
+.social {
     display: flex;
 }
 
-.social a{
-    width:45px;
-    height:45px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:#f9004d;
-    border-radius:50%;
-    margin:30px 50px 50px;
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 30px 50px 50px;
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
 
-.social a:hover{
+.social a:hover {
     transform: scale(1.3);
     transition: .3s;
 }
